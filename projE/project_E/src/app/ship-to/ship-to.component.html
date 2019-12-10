@@ -1,0 +1,35 @@
+<h1>Shipping Address</h1>
+
+<form (ngSubmit)="oncheckOut()" #f="ngForm" ngNativeValidate>
+    <label for="name">Enter your name </label>
+    <input id="name" type="text" placeholder="Recipient Name" [(ngModel)]="name" ngModel name="name" required>
+    <br>
+    <br>
+    <label for="address1">Enter street address 1 </label>
+    <input id = "address1" type="text" placeholder="Address 1" [(ngModel)]="address1" ngModel name="address1" required>
+    <br>
+    <br>
+    <label for="address2">Enter street address 2 </label>
+    <input id = "address2" type="text" placeholder="Address 2" [(ngModel)]="address2" ngModel name="address2">
+    <br>
+    <br>
+    <label for="city">Enter City </label>
+    <input id="city" type="text" placeholder="City" [(ngModel)]="city" ngModel name="city" required>
+    <br>
+    <br>
+    <label for="prov">Enter Province </label>
+    <input id="prov" type="text" placeholder="Province" [(ngModel)]="prov" ngModel name="prov" required>
+    <br>
+    <br>
+    <label for="zip">Enter Postal/Zip code </label>
+    <input id="zip" type="text" placeholder="Postal/Zip code" [(ngModel)]="zip" ngModel name="zip" required>
+    <br>
+    <br>
+    <label for="instructions">Delivery Instructions </label>
+    <input id="instructions" type="text" placeholder="Instructions" [(ngModel)]="instructions" ngModel name="instructions" required>
+    <br>
+    <br>
+    <button (click)="router.navigateByUrl(viewUrl)">Submit</button>
+    <button class="btn btn-primary">Checkout</button>   
+</form>
+

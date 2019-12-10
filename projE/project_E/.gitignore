@@ -1,0 +1,12 @@
+node_modules/
+*.json
+*.js
+browserslist
+e2e/
+test.ts
+styles.css
+polyfills.ts
+main.ts
+*.ico
+environments/
+assests/

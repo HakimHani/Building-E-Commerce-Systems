@@ -1,0 +1,34 @@
+<!-- <button class="btn bton-success" (click)="shipTo()">Ship To</button> -->
+<button><a [routerLink]="['/shipto']"[queryParams]="{viewUrl: viewUrl}">Ship To</a></button>
+<h1>Product</h1>
+<hr>
+<ul>
+    <li>
+        <b>ID: </b>{{ productId }}
+    </li>
+    <li>
+        <b>Name: </b>{{ productName }}
+    </li>
+    <li>
+        <b>Description: </b> {{ productDescription }}
+    </li>
+    <li>
+        <b>Quantity: </b> {{ productQty }}
+    </li>
+    <li>
+        <b>Cost: </b> {{ productCost }}
+    </li>
+    <li>
+        <b>MSRP: </b> {{ productMSRP }}
+    </li>
+    <li>
+        <b>CatId: </b> {{ catId }}
+    </li>
+    <li>
+        <b>VenId: </b> {{ productVenId }}
+    </li>
+</ul>
+<button ><a [routerLink]="['/cart']"[queryParams]="{item: itemString}">Add to Cart</a></button>
+<br>
+<br>
+<button><a [routerLink]="['/category']"[queryParams]="{id: catId}">Back</a></button>
