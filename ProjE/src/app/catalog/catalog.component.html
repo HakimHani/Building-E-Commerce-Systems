@@ -1,0 +1,9 @@
+<!-- <a [routerLink]="['/shipto']"[queryParams]="{viewUrl: viewUrl}">Ship To</a> -->
+<button class="btn bton-success" (click)="shipTo()">Ship To</button>
+<h1>Catalog</h1>
+<hr>
+<ul>
+    <li *ngFor="let cat of catalog">
+        <a [routerLink]="['/category']"[queryParams]="{id: cat.id}">{{ cat.name }}</a>
+    </li>
+</ul>
