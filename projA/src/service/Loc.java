@@ -18,7 +18,7 @@ public class Loc extends Thread {
 	private Socket client;
 	public static String home_Dir = System.getProperty("user.home");
 	public static final String url = "https://maps.googleapis.com/maps/api/geocode/json?";
-	private static final String APIKey = "AIzaSyD7ALv5CBSNt4MAGRH8UM3yoLLx_GpsgaQ";
+	private static final String APIKey = "";
 
 	public Loc(Socket client) {
 		this.client = client;
